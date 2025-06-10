@@ -51,7 +51,7 @@ def train_and_save_model():
     print(f"\nTest accuracy: {test_acc:.4f}")
 
     # 6. Save the trained model
-    model_filename = "fashion_mnist.h5"
+    model_filename = "model/fashion_mnist.h5"
     model.save(model_filename)
     print(f"\nModel successfully saved to {model_filename}")
 

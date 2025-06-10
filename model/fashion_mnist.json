@@ -1,0 +1,102 @@
+[
+  {
+    "name": "flatten_layer",
+    "type": "Flatten",
+    "config": {
+      "name": "flatten_layer",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "data_format": "channels_last"
+    },
+    "weights": []
+  },
+  {
+    "name": "dense_layer_1",
+    "type": "Dense",
+    "config": {
+      "name": "dense_layer_1",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 128,
+      "activation": "relu",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "weights": [
+      "dense_layer_1_0",
+      "dense_layer_1_1"
+    ]
+  },
+  {
+    "name": "output_layer",
+    "type": "Dense",
+    "config": {
+      "name": "output_layer",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 10,
+      "activation": "softmax",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "weights": [
+      "output_layer_0",
+      "output_layer_1"
+    ]
+  }
+]
